@@ -91,3 +91,13 @@ body{background-color:$background-color_1;font-family:$font-family_1;font-weight
 		transition: all 0.3s ease-out;
 	}
 }
+section a {
+	color: #E74133;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color 0.7s cubic-bezier(0.4,-0.1, 1, 0.26);
+
+	&:hover {
+		color: #4285F4;
+	}
+}

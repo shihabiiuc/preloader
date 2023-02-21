@@ -143,4 +143,16 @@ p {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+
+section a {
+  color: #E74133;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: color 0.7s cubic-bezier(0.4, -0.1, 1, 0.26);
+  transition: color 0.7s cubic-bezier(0.4, -0.1, 1, 0.26);
+}
+
+section a:hover {
+  color: #4285F4;
+}
 /*# sourceMappingURL=style.css.map */
