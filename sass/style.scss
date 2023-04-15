@@ -1,6 +1,29 @@
 $color_1: #FFC600; $color_2: rgba(255, 255, 255, 0.6); $font-family_1: 'Roboto Slab', serif; $background-color_1: #222222; $border-top-color_1: #3498db; $border-top-color_2: #e74c3c; $border-top-color_3: #f9c922;
 // boilderplate css
-body{background-color:$background-color_1;font-family:$font-family_1;font-weight:700}footer,section{padding:90px 15px;max-width:1000px;margin:0 auto;text-align:center}h1{color:$color_1;font-size:30px}p{color:$color_2;font-size:16px;line-height:1.7}
+body{background-color:$background-color_1;font-family:$font-family_1;font-weight:700}footer,section{padding:90px 15px;max-width:1000px;margin:0 auto;text-align:center}h1{color:$color_1;font-size:30px}p{color:$color_2;font-size:16px;line-height:1.7}img{max-width:100%;}
+
+section a {
+	color: #E74133;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color 0.7s cubic-bezier(0.4,-0.1, 1, 0.26);
+
+	&:hover {
+		color: #4285F4;
+	}
+	&.button {
+		background-color: red;
+		color: white;
+		padding: 10px 20px;
+		border-radius: 25px;
+		margin-bottom: 30px;
+		display: inline-block;
+		transition: background-color 0.5s ease-out;
+		&:hover {
+			background-color: #C52F24;
+		}
+	}
+}
 
 /* preloader */
 @keyframes spin {
@@ -89,15 +112,5 @@ body{background-color:$background-color_1;font-family:$font-family_1;font-weight
 	#loader {
 		opacity: 0;
 		transition: all 0.3s ease-out;
-	}
-}
-section a {
-	color: #E74133;
-	text-transform: uppercase;
-	text-decoration: none;
-	transition: color 0.7s cubic-bezier(0.4,-0.1, 1, 0.26);
-
-	&:hover {
-		color: #4285F4;
 	}
 }
